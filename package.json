@@ -1,0 +1,17 @@
+{
+  "name": "devvicake",
+  "version": "1.0.0",
+  "description": "devvicake",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "devvi"
+  ],
+  "author": "verrelp",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
