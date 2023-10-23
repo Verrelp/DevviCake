@@ -12,5 +12,5 @@ router.use("/", userOrder)
 router.use("/", userCheckout);
 router.use("/", userlogin);
 router.use("/", home);
-router.use("/products", productRoutes);
+router.use("/", productRoutes);
 module.exports = router;
