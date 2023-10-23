@@ -1,6 +1,7 @@
 const express = require('express');
 const router = require('./routers/router');
 const path = require("path");
+const productRoutes = require('./routers/productRoutes');
 
 const app = express();
 const port = 3000;
@@ -17,6 +18,8 @@ app.use(express.urlencoded({
 }));
 
 app.use(router);
+
+app.use('/products', productRoutes);
 
 app.listen(port, () => {
     console.log(`Server berjalan di port ${port}!`);

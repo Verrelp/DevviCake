@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+        <script src="/js/bootstrap.min.js"></script>
+
+</head>
+
+<body class="bg-light">
+    <div class="container">
+        <div class="py-5 text-center">
+            <img class="mb-4 d-block mx-auto" src="images/1587650575157.png" width="102" height="72">
+            <h2>Checkout Form</h2>
+            <p class="lead">This is payment checkout</p>
+        </div>
+
+        <div class="container">
+            <div class="h4 text-center">
+                <h4 class="mb-3">Billing Address</h4>
+            </div>
+            <form novalidate>
+                <div class="row">
+                    <div class="col-md-7 mx-auto">
+                        <label for="namapenerima" class="form-label">Nama Penerima</label>
+                        <input id="namapenerima" type="text" class="form-control" placeholder="Verrel" required>
+                        <div class="invalid-feedback">
+                            nama penerima harus ada.
+                        </div>
+                        <div class="col-md-8s mx-auto mt-2">
+                            <label for="alamatpenerima" class="form-label">Alamat Penerima</label>
+                            <input id="alamatpenerima" type="text" class="form-control" placeholder="Sesetan,Denpasar"
+                                required>
+                            <div class="invalid-feedback">
+                                Alamat penerima harus ada
+                            </div>
+                            <div class="col-md-8s mx-auto mt-2">
+                                <label for="nomorpenerima" class="form-label">Nomor Penerima</label>
+                                <input id="alamatpenerima" type="text" class="form-control" placeholder="08512345678"
+                                    required>
+                                <div class="invalid-feedback">
+                                    Nomor penerima harus ada
+                                </div>
+                                <div class="col-md-8s mx-auto mt-2">
+                                    <label for="totalpenerima" class="form-label">Total Pembayaran</label>
+                                    <input id="totalpenerima" type="text" class="form-control" placeholder="Rp.100000"
+                                        required>
+                                    <div class="invalid-feedback">
+                                        Nomor penerima harus ada
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown mt-3">
+                                <button class="btn btn-secondary dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Payment Choices
+                                </button>
+                                <ul class="dropdown-menu" style="">
+                                    <li><a class="dropdown-item" href="#">BCA</a></li>
+                                    <li><a class="dropdown-item" href="#">QRIS</a></li>
+                                    <li><a class="dropdown-item" href="#">BNI</a></li>
+                                </ul>
+                            </div>
+                        </div>
+            </form>
+
+        </div>
+    </div>
+</body>
+
+</html>
